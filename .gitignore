@@ -1,0 +1,6 @@
+node_modules/
+bin/
+tmp/
+log/
+.bundle/
+public/assets

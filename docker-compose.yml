@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  api:
+    build: ./messenger_backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./messenger_backend:/app
+    command: bash -c "rm -f tmp/pids/server.pid && rails s -b '0.0.0.0'"
+
+  web:
+    build: ./messenger_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./messenger_frontend:/app
+      - /app/node_modules
+    depends_on:
+      - api
