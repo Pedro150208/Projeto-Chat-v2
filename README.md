@@ -11,7 +11,7 @@ Siga os passos abaixo para configurar e rodar as duas partes do projeto (Backend
 ### 1. Pré-requisitos
 Certifique-se de ter instalado:
 - **Ruby** (recomendado v3.2+)
-- **Node.js** (v18+) e **npm**
+- **Node.js** (v20+) e **npm**
 - **SQLite3**
 
 ---
